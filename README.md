@@ -14,8 +14,7 @@
 
 - Para utilizar esta API, puedes clonar el repositorio.
   npm i => para instalar las dependencias.
-  Debes añadir el archivo.env
+  Debes añadir el archivo.env.
   npm run dev => para arrancar el servidor con nodemon.
 
-- Además tienes un front creado con REACT para visualizar como funciona en:
-  https://github.com/Bertooor/Bilbao_accesible_front
+
