@@ -1,0 +1,180 @@
+.problemas,
+.problema {
+  margin-top: 150px;
+  flex: 1;
+}
+
+.problemas h2 {
+  text-align: center;
+  margin: 50px 20px 0 20px;
+  font-size: 3rem;
+}
+
+.tarjeta_problemas {
+  border: 5px solid #428bca;
+  display: inline-block;
+  height: 355px;
+  width: 450px;
+  margin: 50px 50px;
+  vertical-align: top;
+  padding: 10px;
+  color: #428bca;
+  border-radius: 5px;
+  box-shadow: 5px -5px 5px 0px #2a2c31;
+}
+
+.tarjeta_problemas img {
+  width: 390px;
+  height: 250px;
+  margin-left: 20px;
+}
+
+.tarjeta_problemas h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-bottom: 0.8rem;
+  padding-top: 0.2rem;
+}
+
+.tarjeta_problemas h4 {
+  text-align: center;
+  padding-top: 0.8rem;
+}
+
+.zona_filtro {
+  margin-top: 50px;
+}
+
+.zona_filtro nav {
+  text-align: center;
+  margin-top: 25px;
+  background-color: #428bca;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.zona_filtro button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.zona_filtro button img {
+  width: 40px;
+  height: 40px;
+}
+
+.zona_filtro a {
+  color: white;
+  margin: 20px;
+}
+
+.problema article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.problema h2 {
+  font-size: 3rem;
+}
+
+.problema button {
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 5px 20px 5px 20px;
+  background-color: #428bca;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.problema p {
+  font-size: 1.5rem;
+}
+
+.problema img {
+  margin: 10px;
+  max-width: 380px;
+  height: 250px;
+}
+
+.problema span {
+  color: #428bca;
+  font-weight: bold;
+}
+
+.api {
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+  margin: 10px;
+}
+
+.problema_resuelto {
+  text-decoration: underline #428bca;
+}
+
+p.descripcion {
+  font-size: 1rem;
+  margin: 0 10%;
+  text-align: left;
+}
+
+.zona_denuncias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .problemas,
+  .problema {
+    text-align: center;
+  }
+
+  .zona_filtro nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .problema,
+  .problemas {
+    margin-top: 50px;
+  }
+
+  .problema img {
+    width: 290px;
+  }
+
+  .tarjeta_problemas {
+    width: 320px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tarjeta_problemas img {
+    width: 290px;
+    margin-left: 0;
+  }
+
+  .problemas h2,
+  .problema h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+
+  .zona_filtro {
+    margin-top: 20px;
+  }
+
+  .zona_filtro a {
+    margin: 5px;
+    font-size: 0.9rem;
+  }
+}
