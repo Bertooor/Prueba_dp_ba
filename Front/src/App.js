@@ -10,6 +10,7 @@ import { Suspense } from "react";
 import PiePagina from "./PiePagina/PiePagina";
 import Usuario from "./Paginas/Usuario/Usuario";
 import NuevaContraseña from "./Paginas/Registro/NuevaContraseña";
+import UsuarioValidado from "./Paginas/Usuario/UsuarioValidado";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
           <Route path="/admin/*" element={<Admin />} />
           <Route path="/usuario/*" element={<Usuario />} />
           <Route path="/filtro/*" element={<Problemas />} />
+	  <Route
+            path="/usuarios/validar/:registrationCode"
+            element={<UsuarioValidado />}
+          />
         </Routes>
       </Suspense>
       <PiePagina />
