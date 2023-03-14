@@ -28,7 +28,7 @@ const editaLugar = async (req, res, next) => {
     );
 
     res.send({
-      status: 'ok',
+      status: 'ok.',
       message: 'Lugar editado.',
       data: {
         id,

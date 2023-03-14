@@ -12,8 +12,14 @@ function UsuarioValidado() {
         `${process.env.REACT_APP_API}/usuarios/validar/${registrationCode}`
       );
       const data = await res.json();
-      setMessage(data);
-      setStatus(data);
+      if (data.status === "error") {
+      	setStatus("error");
+      	setMessage(data.message);
+      } else {
+      	setStatus("ok");
+      	setMessage(data.message);
+      }
+
       console.log("datos: ", data);
     })();
   }, [registrationCode]);
@@ -21,6 +27,7 @@ function UsuarioValidado() {
     <section className="zona_usuario">
       {status === "error" && <p className="api">{message}</p>}
       {status === "ok" && <p className="api">{message}</p>}
+      <p>algo</p>
     </section>
   );
 }
